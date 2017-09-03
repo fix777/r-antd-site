@@ -3,6 +3,9 @@ const Koa = require("koa");
 const Router = require("koa-router");
 const next = require("next");
 
+const [node, file, port = "port=3000"] = process.argv;
+const [someProp, p] = port.split("=");
+const PORT = p;
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
 const handle = app.getRequestHandler();
@@ -33,7 +36,7 @@ app.prepare()
 
     server.use(router.routes());
 
-    server.listen(3000, (err) => {
+    server.listen(PORT, (err) => {
       if (err) throw err;
       console.log("> Ready on http://127.0.0.1:3000");
     });
