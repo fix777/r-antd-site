@@ -3,12 +3,12 @@ import { Row } from "antd";
 
 import Anchor from "./../anchor/anchor";
 
-const DocBlock = ({ title, href = "#", children }: any) => (
+const DocBlock = ({ id, title, children }: any) => (
   <Row className="doc-block_container">
     <Row className="doc-block_first-row">
       <Anchor
+        id={id}
         title={title}
-        href={href}
       />
     </Row>
     <Row>

@@ -13,7 +13,7 @@ const columns = [
     title: "说明",
     dataIndex: "description",
     width: 500,
-    tooltip: true,
+    // tooltip: true,
   },
   {
     title: "类型",
@@ -43,7 +43,7 @@ const dataSource = [
   {
     props: "formItems",
     description: "表单项",
-    type: <a href="#form-item">RFormItemProps[]</a>,
+    type: <a href="#r-form-item-props">RFormItemProps[]</a>,
     default: "",
   },
   {
@@ -62,8 +62,8 @@ const dataSource = [
 
 export default () => (
   <DocBlock
+    id="r-form"
     title="RForm"
-    href="#r-form"
   >
     <RTable
       pagination={false}

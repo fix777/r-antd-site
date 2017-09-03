@@ -42,7 +42,7 @@ render(
   document.querySelector("#react-root")
 );
 `));
-export default () => (React.createElement(DocBlock, { title: "代码演示", href: "#code" },
+export default () => (React.createElement(DocBlock, { id: "code", title: "Examples" },
     React.createElement(DemoBlock, { demo: React.createElement(RForm, { header: "This is a r-form.", footer: {
                 defaultActionAlign: "right",
                 showClear: true,

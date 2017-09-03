@@ -58,8 +58,8 @@ render(
 
 export default () => (
   <DocBlock
-    title="代码演示"
-    href="#code"
+    id="code"
+    title="Examples"
   >
     <DemoBlock
       demo={

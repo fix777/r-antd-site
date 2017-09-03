@@ -12,9 +12,9 @@ app.prepare()
     const server = new Koa();
     const router = new Router();
 
-    router.get("/documentation/component/:comp", async ctx => {
+    router.get("/components/:comp", async ctx => {
       const comp = ctx.params.comp;
-      const actualPage = `/${comp}`;
+      const actualPage = `/components/${comp}`;
       const queryParams = { comp: ctx.params.comp };
       await app.render(ctx.req, ctx.res, actualPage, queryParams);
     });

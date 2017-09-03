@@ -11,7 +11,6 @@ const columns = [
         title: "说明",
         dataIndex: "description",
         width: 500,
-        tooltip: true,
     },
     {
         title: "类型",
@@ -40,7 +39,7 @@ const dataSource = [
     {
         props: "formItems",
         description: "表单项",
-        type: React.createElement("a", { href: "#form-item" }, "RFormItemProps[]"),
+        type: React.createElement("a", { href: "#r-form-item-props" }, "RFormItemProps[]"),
         default: "",
     },
     {

@@ -1,0 +1,8 @@
+.statement_wrapper {
+  padding: 0 24px;
+}
+
+.statement_wrapper p {
+  margin: .75rem 0;
+  font-size: 14px;
+}
