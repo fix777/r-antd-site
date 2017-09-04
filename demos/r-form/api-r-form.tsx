@@ -41,6 +41,12 @@ const dataSource = [
     default: 10,
   },
   {
+    props: "defaultRenderFormItemCount",
+    description: "默认渲染的表单项，用于启用高级查询。若传入的值大于 0 ，那么会按顺序截取传入的 formItems ，搭配 footer 的 showAdvancedToggle: true 来开启 展开/收起 操作按钮",
+    type: "number",
+    default: 0,
+  },
+  {
     props: "formItems",
     description: "表单项",
     type: <a href="#r-form-item-props">RFormItemProps[]</a>,

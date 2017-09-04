@@ -3210,9 +3210,9 @@ querystring@0.2.0, querystring@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
 
-r-antd@0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/r-antd/-/r-antd-0.1.10.tgz#031950460feed68d06cb2325528af66d1dd73ba1"
+r-antd@0.1.11:
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/r-antd/-/r-antd-0.1.11.tgz#3d51a62b97ef70db639473948f20f845359ac3d5"
   dependencies:
     antd "^2.12.6"
 

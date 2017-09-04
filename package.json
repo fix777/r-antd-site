@@ -28,7 +28,7 @@
     "koa": "^2.3.0",
     "koa-router": "^7.2.1",
     "next": "^3.0.1",
-    "r-antd": "0.1.10",
+    "r-antd": "0.1.11",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-markdown": "^2.5.0",

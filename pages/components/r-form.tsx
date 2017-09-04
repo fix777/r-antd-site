@@ -4,6 +4,7 @@ import { Row, Col } from "antd"
 import LayoutBase from "./../../comps/layout-base/layout-base";
 import ComponentDoc from "./../../comps/component-doc/component-doc";
 import Demo from "./../../demos/r-form/demo";
+import DemoAdvancedToggle from "./../../demos/r-form/demo-advanced-toggle";
 import ApiRForm from "./../../demos/r-form/api-r-form";
 import ApiRFormItemProps from "./../../demos/r-form/api-r-form-item-props";
 import ApiRFormFooter from "./../../demos/r-form/api-r-form-footer";
@@ -17,6 +18,7 @@ export default ({ url }: any) => (
       comp={url.query.comp}
     >
       <Demo />
+      <DemoAdvancedToggle />
       <Anchor
         id="api"
         title="API"

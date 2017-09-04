@@ -65,6 +65,18 @@ const dataSource = [
     default: "Submit",
   },
   {
+    props: "showAdvancedToggle",
+    description: "是否启用高级查询的展开/收起操作按钮",
+    type: "boolean",
+    default: "false",
+  },
+  {
+    props: "advancedToggleTexts",
+    description: "展开/收起操作按钮的文本",
+    type: "[string, string]",
+    default: '["Expand", "Collapse"]',
+  },
+  {
     props: "onClear",
     description: "点击清空按钮时的回调函数",
     type: "() => void",
@@ -72,8 +84,14 @@ const dataSource = [
   },
   {
     props: "onSubmit",
-    description: "提交按钮时的回调函数",
+    description: "点击提交按钮时的回调函数",
     type: "() => void",
+    default: "",
+  },
+  {
+    props: "onAdvancedToggle",
+    description: "点击展开/收起操作按钮的回调函数",
+    type: "(prevRenderCount: number) => void",
     default: "",
   },
 ];
