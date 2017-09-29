@@ -4,10 +4,15 @@
   ],
   "plugins": [
     [
-      "import", { "libraryName": "antd" }
+      "import",
+      [
+        {
+          "libraryName": "antd"
+        },
+        {
+          "libraryName": "r-antd"
+        }
+      ]
     ],
-    [
-      "import", { "libraryName": "r-antd" }
-    ]
   ]
 }
