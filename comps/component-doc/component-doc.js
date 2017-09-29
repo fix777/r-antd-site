@@ -7,14 +7,14 @@ export default ({ comp, children }) => (React.createElement(Row, null,
                 {
                     type: "submenu",
                     key: "comp",
-                    title: React.createElement("span", null,
+                    title: (React.createElement("span", null,
                         React.createElement(Icon, { type: "appstore-o" }),
-                        "Components"),
+                        "Components")),
                     children: [
                         {
                             type: "menuitem",
                             key: "r-form",
-                            children: (React.createElement("a", { href: "/documentation/component/r-form" }, "RForm")),
+                            children: React.createElement("a", { href: "/components/r-form" }, "RForm"),
                         },
                         {
                             type: "menuitem",
@@ -43,4 +43,4 @@ export default ({ comp, children }) => (React.createElement(Row, null,
                     ],
                 },
             ] })),
-    React.createElement(Col, { className: "content_right", xs: 0, sm: 0, md: 18, lg: 20 }, children)));
+    React.createElement(Col, { className: "content_right", xs: 24, sm: 24, md: 18, lg: 20 }, children)));

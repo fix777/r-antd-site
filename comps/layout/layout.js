@@ -6,7 +6,7 @@ import Style from "./layout-style";
 const { Header, Sider, Content } = Layout;
 export default ({ comp, children }) => (React.createElement(Layout, null,
     React.createElement(Head, null,
-        React.createElement("link", { rel: 'stylesheet', href: '//cdnjs.cloudflare.com/ajax/libs/antd/2.12.6/antd.min.css' }),
+        React.createElement("link", { rel: "stylesheet", href: "//cdnjs.cloudflare.com/ajax/libs/antd/2.13.1/antd.min.css" }),
         React.createElement("link", { rel: "stylesheet", href: "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" }),
         React.createElement("style", null, `
         .code {
@@ -37,14 +37,14 @@ export default ({ comp, children }) => (React.createElement(Layout, null,
                     {
                         type: "submenu",
                         key: "comp",
-                        title: React.createElement("span", null,
+                        title: (React.createElement("span", null,
                             React.createElement(Icon, { type: "appstore-o" }),
-                            "Component"),
+                            "Component")),
                         children: [
                             {
                                 type: "menuitem",
                                 key: "r-form",
-                                children: (React.createElement("a", { href: "/documentation/component/r-form" }, "RForm")),
+                                children: React.createElement("a", { href: "/components/r-form" }, "RForm"),
                             },
                             {
                                 type: "menuitem",

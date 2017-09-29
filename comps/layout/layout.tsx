@@ -10,8 +10,11 @@ const { Header, Sider, Content } = Layout;
 export default ({ comp, children }: any) => (
   <Layout>
     <Head>
-      <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/antd/2.12.6/antd.min.css' />
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/antd/2.13.1/antd.min.css" />
+      <link
+        rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css"
+      />
       <style>{`
         .code {
           margin: 0 1px;
@@ -55,14 +58,16 @@ export default ({ comp, children }: any) => (
             {
               type: "submenu",
               key: "comp",
-              title: <span><Icon type="appstore-o" />Component</span>,
+              title: (
+                <span>
+                  <Icon type="appstore-o" />Component
+                </span>
+              ),
               children: [
                 {
                   type: "menuitem",
                   key: "r-form",
-                  children: (
-                    <a href="/documentation/component/r-form">RForm</a>
-                  ),
+                  children: <a href="/components/r-form">RForm</a>,
                 },
                 {
                   type: "menuitem",
@@ -93,11 +98,9 @@ export default ({ comp, children }: any) => (
         <Breadcrumb style={{ margin: "12px 0" }}>
           <Breadcrumb.Item>Documentation</Breadcrumb.Item>
           <Breadcrumb.Item>Component</Breadcrumb.Item>
-          <Breadcrumb.Item>{ comp }</Breadcrumb.Item>
+          <Breadcrumb.Item>{comp}</Breadcrumb.Item>
         </Breadcrumb>
-        <Content className="content">
-          { children }
-        </Content>
+        <Content className="content">{children}</Content>
       </Layout>
     </Layout>
     <Style />

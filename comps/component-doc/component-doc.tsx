@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Row, Col, Icon } from "antd"
+import { Row, Col, Icon } from "antd";
 import { RMenu } from "r-antd";
 
 export default ({ comp, children }: any) => (
@@ -15,14 +15,16 @@ export default ({ comp, children }: any) => (
           {
             type: "submenu",
             key: "comp",
-            title: <span><Icon type="appstore-o" />Components</span>,
+            title: (
+              <span>
+                <Icon type="appstore-o" />Components
+              </span>
+            ),
             children: [
               {
                 type: "menuitem",
                 key: "r-form",
-                children: (
-                  <a href="/documentation/component/r-form">RForm</a>
-                ),
+                children: <a href="/components/r-form">RForm</a>,
               },
               {
                 type: "menuitem",
@@ -53,11 +55,8 @@ export default ({ comp, children }: any) => (
         ]}
       />
     </Col>
-    <Col
-      className="content_right"
-      xs={0} sm={0} md={18} lg={20}
-    >
-      { children }
+    <Col className="content_right" xs={24} sm={24} md={18} lg={20}>
+      {children}
     </Col>
   </Row>
 );
